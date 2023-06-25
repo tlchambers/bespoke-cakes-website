@@ -1,37 +1,44 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import Logo from '../assets/Logo.png';
 
 function Navbar() {
+	const [nav, setNav] = useState(false);
+	const handleClick = () => setNav(!nav);
+
 	return (
-		<div className="fixed w-full h-[180px] flex justify-start items-center px-4 bg-[#f8f8f8]">
+		<div className="fixed flex justify-start items-center h-[150px] w-full mx-auto px-4 bg-[#f8f8f8]">
 			<div>
-				<img src={Logo} alt="Logo Iamge" style={{ width: '220px' }} />
+				<img src={Logo} alt="Logo" style={{ width: '220px' }} />
 			</div>
 			{/* Menu */}
-			<div>
-				<ul className="flex">
-					<li className="p-4">Home</li>
-					<li className="p-4">Bespoke Cakes</li>
-					<li className="p-4">Price Guide</li>
-					<li className="p-4">About</li>
-					<li className="p-4">Contact</li>
-				</ul>
-			</div>
+			<ul className="hidden px-4 md:flex">
+				<li>Home</li>
+				<li>Bespoke Cakes</li>
+				<li>Price Guide</li>
+				<li>About</li>
+				<li>Contact</li>
+			</ul>
+
 			{/* Hamburger menu */}
-			<div className="hidden">
-				<FaBars />
+			<div onClick={handleClick} className="md:hidden z-10">
+				{!nav ? <FaBars /> : <FaTimes />}
 			</div>
-			{/* Social */}
-			<div className="hidden">
-				<ul>
-					<li className="p-4">Home</li>
-					<li className="p-4">Bespoke Cakes</li>
-					<li className="p-4">Price Guide</li>
-					<li className="p-4">About</li>
-					<li className="p-4">Contact</li>
-				</ul>
-			</div>
+
+			{/* Mobile menu */}
+			<ul
+				className={
+					!nav
+						? 'hidden'
+						: 'absolute top-0 left-0 w-full h-screen  bg-[#f8f8f8] flex flex-col justify-center items-center'
+				}
+			>
+				<li className="py-6 text04xl">Home</li>
+				<li className="py-6 text04xl">Bespoke Cakes</li>
+				<li className="py-6 text04xl">Price Guide</li>
+				<li className="py-6 text04xl">About</li>
+				<li className="py-6 text04xl">Contact</li>
+			</ul>
 		</div>
 	);
 }

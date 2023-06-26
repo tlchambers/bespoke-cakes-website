@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
-import Cards from './components/Cards';
+import HowToOrder from './components/HowToOrder';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
 import Gallery from './components/Gallery';
@@ -13,9 +13,9 @@ function App() {
 			<Navbar />
 			<Hero />
 			<About />
-			<Cards />
-			<Contact />
+			<HowToOrder />
 			<Gallery />
+			<Contact />
 			<Footer />
 		</div>
 	);

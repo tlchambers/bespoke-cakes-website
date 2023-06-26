@@ -4,12 +4,34 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Fauna+One&display=swap');
+
 @layer base {
-	h1 {
+	h1,
+	span {
 		@apply font-[Cinzel];
+	}
+	h2,
+	h3,
+	h4,
+	p {
+		@apply font-[Fauna];
 	}
 	li {
 		@apply px-4;
-		@apply cursor-pointer;
+		@apply py-4;
+		@apply font-[Fauna];
+	}
+	button {
+		@apply font-[Fauna];
+		@apply bg-black bg-opacity-30 text-white hover:bg-black hover:border-black w-[140px] p-2 rounded-full;
+	}
+
+	@layer components {
+		.cards {
+			@apply bg-white
+			/* w-72 max-h-[1000px] */
+			shadow-xl rounded-md overflow-hidden;
+		}
 	}
 }

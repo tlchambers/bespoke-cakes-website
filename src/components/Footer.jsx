@@ -6,11 +6,13 @@ function Footer() {
 	return (
 		<div className="w-full mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 bg-[#f8f8f8]">
 			<div>
-				<h1 className="w-full text-3xl font-bold">Boujie Delights</h1>
+				<h1 className="text-3xl">Boujie Delights</h1>
 				<p className="py-4">
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id odit
-					ullam iste repellat consequatur libero reiciendis, blanditiis
-					accusantium.
+					Step into the world of Boujie Delights, where every cake, cupcake, and
+					treat is lovingly handmade in Brockley, South East London. Our bespoke
+					creations are not only visually stunning, but also bursting with
+					flavor, ensuring that every bite is as unforgettable as the occasion
+					itself.
 				</p>
 			</div>
 			<div className="lg:col-span-2 flex justify-between">
@@ -30,27 +32,30 @@ function Footer() {
 					</ul>
 				</div>
 				<div>
-					<h6 className="font-medium text-center">Company</h6>
 					<ul>
 						<li className="py-2 text-sm">
-							<p>
-								<GrLocation size={20} /> South-East London,
+							<p className="flex align-items-start">
+								<GrLocation size={20} style={{ marginRight: '0.8rem' }} />
+								South-East London,
 								<br /> Forest Hill
 							</p>
 						</li>
 						<li className="py-2 text-sm">
-							<p>
-								<GrPhone size={20} /> 07XXXXXXXX
+							<p className="flex items-center align-items-start">
+								<GrPhone size={20} style={{ marginRight: '0.8rem' }} />
+								07XXXXXXXX
 							</p>
 						</li>
 						<li className="py-2 text-sm">
-							<p>
-								<FaRegCommentDots size={20} /> boujiedelights@gmail.com
+							<p className="flex items-center align-items-start">
+								<FaRegCommentDots size={20} style={{ marginRight: '0.8rem' }} />
+								boujiedelights@gmail.com
 							</p>
 						</li>
 						<li className="py-2 text-sm">
-							<p>
-								<FaInstagram size={20} /> @boujiedelights
+							<p className="flex items-center align-items-start">
+								<FaInstagram size={20} style={{ marginRight: '0.8rem' }} />
+								@boujiedelights
 							</p>
 						</li>
 					</ul>

@@ -2,14 +2,30 @@ import React from 'react';
 
 function Hero() {
 	return (
-		<div className="max-w-[800px] mt-[96px] w-full h-screen mx-auto text-center flex flex-col justify-center">
-			<p>Welcome To</p>
-			<h1 className="md:text-6xl sm:text-6xl text-4xl font-bold md:py-6">
-				Boujie Delights
-			</h1>
-			<button className="bg-[#00df9a] w-[120px] rounded-lg font-serif my-6 mx-auto py-3">
-				<a href="/">Explore Cakes</a>
-			</button>
+		<div name="home" className="w-full h-screen flex flex-col justify-between">
+			{/* background Image */}
+			<img
+				src="https://images.unsplash.com/photo-1595272568891-123402d0fb3b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MjB8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+				alt=""
+				className="w-full h-full object-cover"
+			/>
+			<div className="grid md:grid-cols-2 mx-w-[1240px] m-auto">
+				<div className="absolute top-[26%] flex flex-col ">
+					<h3>Welcome To</h3>
+					<h2 className="md:text-4xl sm:text-4xl text-6xl md:py-6 py-4">
+						Boujie Delights
+					</h2>
+					<p className=" max-w-[400px] flex">
+						When it comes to design, the sky is the limit! Whether you have a
+						specific theme or color scheme in mind, or simply want something
+						unique and eye-catching, we would love to create a cake that
+						perfectly captures your vision.
+					</p>
+					<button className="bg-black bg-opacity-30 text-white hover:bg-black hover:border-black w-[140px] p-2 mt-6 rounded-full">
+						<a href="/cakes">Explore Cakes</a>
+					</button>
+				</div>
+			</div>
 		</div>
 	);
 }

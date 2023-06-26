@@ -1,57 +1,124 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import Logo from '../assets/Logo.png';
+import { Link } from 'react-scroll';
 
-function Navbar() {
+const Navbar = () => {
 	const [nav, setNav] = useState(false);
-	const handleNav = () => {
-		setNav(!nav);
-	};
+	const handleClick = () => setNav(!nav);
+
+	const handleClose = () => setNav(!nav);
 
 	return (
-		<div className="w-full flex items-center justify-between bg-[#f8f8f8]">
-			{/* Logo and Navigation Menu Container */}
-			<div className="flex items-center">
-				{/* Logo */}
-				<img src={Logo} alt="Logo" style={{ width: '220px' }} />
+		<div className="w-screen h-[80px] z-10 bg-zinc-200 fixed drop-shadow-lg">
+			<div className="px-2 flex justify-between items-center w-full h-full">
+				<div className="flex items-center">
+					<h1 className="text-3xl font-bold mr-4 sm:text-4xl">
+						Boujie Delights
+					</h1>
+					<ul className="hidden md:flex">
+						<li>
+							<Link to="home" smooth={true} duration={500}>
+								Home
+							</Link>
+						</li>
+						<li>
+							<Link to="cakes" smooth={true} offset={-200} duration={500}>
+								Cakes
+							</Link>
+						</li>
+						<li>
+							<Link to="priceGuide" smooth={true} offset={-50} duration={500}>
+								Price Guide
+							</Link>
+						</li>
+						<li>
+							<Link to="gallery" smooth={true} offset={-100} duration={500}>
+								Gallery
+							</Link>
+						</li>
+						<li>
+							<Link to="about" smooth={true} offset={-50} duration={500}>
+								About
+							</Link>
+						</li>
+						<li>
+							<Link to="contact" smooth={true} offset={-50} duration={500}>
+								Contact
+							</Link>
+						</li>
+					</ul>
+				</div>
 
-				{/* Navigation Menu */}
-				<ul className="hidden sm:flex ml-8">
-					<li>Home</li>
-					<li>Bespoke Cakes</li>
-					<li>Price Guide</li>
-					<li>About</li>
-					<li>Contact</li>
-				</ul>
+				<div className="md:hidden mr-4" onClick={handleClick}>
+					{!nav ? <FaBars /> : <FaTimes />}
+				</div>
 			</div>
 
-			{/* Mobile Menu */}
-			<div>
-				<ul
-					className={
-						!nav
-							? 'hidden'
-							: 'absolute top-[120px] right-0 w-full h-screen bg-[#f8f8f8] flex flex-col justify-center items-center'
-					}
-				>
-					<li className="py-8 text04xl ">Home</li>
-					<li className="py-8 text04xl">Bespoke Cakes</li>
-					<li className="py-8 text04xl">Price Guide</li>
-					<li className="py-8 text04xl">About</li>
-					<li className="py-8 text04xl">Contact</li>
-				</ul>
-			</div>
-
-			{/* Hamburger Icon */}
-			<div onClick={handleNav} className="sm:hidden pr-4">
-				{!nav ? (
-					<FaBars size={20} className="mr-4 cursor-pointer" />
-				) : (
-					<FaTimes size={20} className="mr-4 cursor-pointer" />
-				)}
-			</div>
+			<ul className={!nav ? 'hidden' : 'absolute bg-zinc-200 w-full px-8 py-8'}>
+				<li className="border-b-2 border-zinc-300 w-full">
+					<Link onClick={handleClose} to="home" smooth={true} duration={500}>
+						Home
+					</Link>
+				</li>
+				<li className="border-b-2 border-zinc-300 w-full">
+					<Link
+						onClick={handleClose}
+						to="cakes"
+						smooth={true}
+						offset={-200}
+						duration={500}
+					>
+						Cakes
+					</Link>
+				</li>
+				<li className="border-b-2 border-zinc-300 w-full">
+					<Link
+						onClick={handleClose}
+						to="priceGuide"
+						smooth={true}
+						offset={-50}
+						duration={500}
+					>
+						Price Guide
+					</Link>
+				</li>
+				<li className="border-b-2 border-zinc-300 w-full">
+					<Link
+						onClick={handleClose}
+						to="gallery"
+						smooth={true}
+						offset={-100}
+						duration={500}
+					>
+						Gallery
+					</Link>
+				</li>
+				<li className="border-b-2 border-zinc-300 w-full">
+					<Link
+						onClick={handleClose}
+						to="about"
+						smooth={true}
+						offset={-50}
+						duration={500}
+					>
+						About
+					</Link>
+				</li>
+				<li className="border-b-2 border-zinc-300 w-full">
+					<Link
+						onClick={handleClose}
+						to="contact"
+						smooth={true}
+						offset={-50}
+						duration={500}
+					>
+						Contact
+					</Link>
+				</li>
+			</ul>
 		</div>
 	);
-}
+};
 
 export default Navbar;

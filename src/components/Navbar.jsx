@@ -13,37 +13,70 @@ const Navbar = () => {
 		<div className="w-screen h-[80px] z-10 bg-zinc-200 fixed drop-shadow-lg">
 			<div className="px-2 flex justify-between items-center w-full h-full">
 				<div className="flex items-center">
-					<h1 className="text-3xl font-bold mr-4 sm:text-4xl">
-						Boujie Delights
-					</h1>
+					<h1 className="text-2xl mr-4 sm:text-4xl">Boujie Delights</h1>
 					<ul className="hidden md:flex">
 						<li>
-							<Link to="home" smooth={true} duration={500}>
+							<Link
+								to="home"
+								smooth={true}
+								duration={500}
+								className="cursor-pointer"
+							>
 								Home
 							</Link>
 						</li>
 						<li>
-							<Link to="cakes" smooth={true} offset={-200} duration={500}>
+							<Link
+								to="cakes"
+								smooth={true}
+								offset={-200}
+								duration={500}
+								className="cursor-pointer"
+							>
 								Cakes
 							</Link>
 						</li>
 						<li>
-							<Link to="priceGuide" smooth={true} offset={-50} duration={500}>
-								Price Guide
+							<Link
+								to="howToOrder"
+								smooth={true}
+								offset={-50}
+								duration={500}
+								className="cursor-pointer"
+							>
+								How to Order
 							</Link>
 						</li>
 						<li>
-							<Link to="gallery" smooth={true} offset={-100} duration={500}>
+							<Link
+								to="gallery"
+								smooth={true}
+								offset={-100}
+								duration={500}
+								className="cursor-pointer"
+							>
 								Gallery
 							</Link>
 						</li>
 						<li>
-							<Link to="about" smooth={true} offset={-50} duration={500}>
+							<Link
+								to="about"
+								smooth={true}
+								offset={-50}
+								duration={500}
+								className="cursor-pointer"
+							>
 								About
 							</Link>
 						</li>
 						<li>
-							<Link to="contact" smooth={true} offset={-50} duration={500}>
+							<Link
+								to="contact"
+								smooth={true}
+								offset={-50}
+								duration={500}
+								className="cursor-pointer"
+							>
 								Contact
 							</Link>
 						</li>

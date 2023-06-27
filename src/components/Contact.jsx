@@ -2,6 +2,42 @@ import React from 'react';
 import Img1 from '../assets/aboutImage.jpeg';
 
 function Contact() {
+	function Submit(e) {
+		e.preventDefault();
+		const formElement = document.querySelector('#form');
+		const formData = new FormData(formElement);
+
+		fetch(
+			'https://script.google.com/macros/s/AKfycbx5aP0SuqyQOrNGn2cI3w3lagEYLgHAX7vp1ucQWt9UrVSD9c7haoYZCiBAbyABVnNq/exec',
+			{
+				method: 'POST',
+				body: formData,
+			}
+		)
+			.then((response) => {
+				// handle response from the Google Sheets API
+				if (response.ok) {
+					console.log('Form submitted!');
+					// Clear information from from
+					formElement.reset();
+				} else {
+					console.log('Form failed to submit');
+				}
+			})
+			.catch((error) => {
+				console.log('Error:', error);
+			});
+
+		const submissionMessage = document.createElement('p');
+		submissionMessage.textContent =
+			'Your message has been successfully submitted!';
+		formElement.appendChild(submissionMessage);
+
+		setTimeout(() => {
+			submissionMessage.remove();
+		}, 6000);
+	}
+
 	return (
 		<div
 			name="contact"
@@ -14,13 +50,28 @@ function Contact() {
 			</p>
 			<div className="grid md:grid-cols-2 py-4">
 				<img src={Img1} alt="/" className="w-full md:h-full object-cover" />
-				<form className="flex flex-col justify-center items-center">
+				<form
+					id="form"
+					className="flex flex-col justify-center items-center"
+					onSubmit={(e) => Submit(e)}
+				>
 					<div className="grid grid-cols-2 w-full max-w-xl">
-						<input className="border m-2 p-2" type="text" placeholder="First" />
-						<input className="border m-2 p-2" type="text" placeholder="Last" />
+						<input
+							className="border m-2 p-2"
+							type="text"
+							name="First"
+							placeholder="First"
+						/>
+						<input
+							className="border m-2 p-2"
+							type="text"
+							name="Last"
+							placeholder="Last"
+						/>
 						<input
 							className="border col-span-2 m-2 p-2"
 							type="email"
+							name="Email"
 							placeholder="someone@gmail.com"
 						/>
 						<textarea
@@ -28,6 +79,7 @@ function Contact() {
 							cols={30}
 							rows={10}
 							placeholder="Message"
+							name="Message"
 						></textarea>
 						<button className="uppercase col-span-2 m-2 bg-[#fee3c3] text-black hover:bg-white hover:border-2 hover:border-[#fee3c3]">
 							Submit

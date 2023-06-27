@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 
 function Hero() {
 	return (
@@ -22,7 +23,15 @@ function Hero() {
 						perfectly captures your vision.
 					</p>
 					<button className="bg-black bg-opacity-30 text-white uppercase hover:bg-black hover:border-black w-[140px] p-2 mt-6 rounded-full">
-						<a href="/cakes">EXPLORE</a>
+						<Link
+							to="cakes"
+							smooth={true}
+							offset={-200}
+							duration={500}
+							className="cursor-pointer"
+						>
+							EXPLORE
+						</Link>
 					</button>
 				</div>
 			</div>

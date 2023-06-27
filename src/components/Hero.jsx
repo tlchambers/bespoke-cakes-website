@@ -22,7 +22,7 @@ function Hero() {
 						perfectly captures your vision.
 					</p>
 					<button className="bg-black bg-opacity-30 text-white hover:bg-black hover:border-black w-[140px] p-2 mt-6 rounded-full">
-						<a href="/cakes">Explore Cakes</a>
+						<a href="/cakes">View</a>
 					</button>
 				</div>
 			</div>

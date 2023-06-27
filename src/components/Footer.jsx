@@ -33,6 +33,7 @@ function Footer() {
 				</div>
 				<div>
 					<ul>
+						<h6 className="font-medium text-center">Contact</h6>
 						<li className="py-2 text-sm">
 							<p className="flex align-items-start">
 								<GrLocation size={20} style={{ marginRight: '0.8rem' }} />

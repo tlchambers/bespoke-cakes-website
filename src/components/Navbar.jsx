@@ -33,7 +33,7 @@ const Navbar = () => {
 								duration={500}
 								className="cursor-pointer"
 							>
-								Cakes
+								Bespoke Cakes
 							</Link>
 						</li>
 						<li>
@@ -102,7 +102,7 @@ const Navbar = () => {
 						offset={-200}
 						duration={500}
 					>
-						Cakes
+						Bespoke Cakes
 					</Link>
 				</li>
 				<li className="border-b-2 border-zinc-300 w-full">

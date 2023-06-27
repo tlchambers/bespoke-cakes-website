@@ -1,58 +1,55 @@
 import React from 'react';
 import Img from '../assets/aboutImage.jpeg';
+import { Link } from 'react-scroll';
 
 function About() {
 	return (
-		<div name="about" className="w-full">
-			<div className="max-w-[1240px] mx-auto grid md:grid-cols-2 gap-6">
-				<img
-					className="w-[800px] mx-auto my-2"
-					src={Img}
-					alt="/about image page"
-				/>
-				<div className="flex flex-col justify-center">
-					<h1 className="text-4xl">About</h1>
-					<p className="md:text sm:tex-3xl text-2md py-2">
-						My name is Sabrina and I am a home based baker and cane decorator
-						based in South East London. <br />
-						My passion for baking started 2021 when I started baking cakes &
-						treats for family and friends. This lead to me experimenting and
-						having fun with making different types of cakes and treats such as
-						chocolate covered strawberries, cakesicles, sugar cookies &
-						chocolate smash hearts. Two years on and I now have my own
-						buttercream cakes business specialising in occasion cakes for
-						birthdays, anniversaries, christenings, baby and bridal showers,
-						charity events & more.
-					</p>
+		<div name="about" className="w-full bg-gray-100">
+			<div className="max-w-[1240px] mx-auto px-4 py-[4rem] grid grid-cols-1 md:grid-cols-2 gap-8">
+				<div className="md:order-1">
+					<img
+						src="https://images.pexels.com/photos/4110012/pexels-photo-4110012.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+						alt="About Me"
+						className="w-full h-auto object-cover"
+					/>
 				</div>
-				<img
-					className="w-[800px] mx-auto my-2"
-					src={Img}
-					alt="/about image page"
-				/>
-				<div className="flex flex-col justify-center">
-					<h1 className="text-4xl">About</h1>
-					<p className="md:text sm:tex-3xl text-2md py-2">
-						The process of baking and decorating cakes for me is very
-						therapeutic, every order I receive is very special to me as it
-						allows me to learn and grow whilst trusting the process. I am a
-						hardworking, resilient creative who takes pride in my work.
+				<div className="md:order-2">
+					<h2 className="text-3xl pt-6 uppercase">About</h2>
+					<p className="text-lg py-4">
+						My name is Sabrina, and I am a home-based baker and cake decorator
+						based in South East London. My passion for baking started in 2021
+						when I began baking cakes and treats for family and friends. This
+						led me to experiment and have fun with making different types of
+						cakes and treats, such as chocolate-covered strawberries,
+						cakesicles, sugar cookies, and chocolate smash hearts. Two years on,
+						I now have my own buttercream cakes business specializing in
+						occasion cakes for birthdays, anniversaries, christenings, baby and
+						bridal showers, charity events, and more.
 					</p>
-					<p>
-						I aspire to not only make tasteful, visually pleasing cakes but to
-						make others like you have an enjoyable and rememberable experience
-						whenever tasting one of my desserts. So if your looking for a cake
-						or treats for your special occasion, Boujie Delights can help make
-						your day a remarkable. I looking forward to hearing from you soon!
+					<p className="text-lg pb-4">
+						The process of baking and decorating cakes is very therapeutic for
+						me. Every order I receive is special as it allows me to learn, grow,
+						and trust the process. I am a hardworking and resilient creative who
+						takes pride in my work. My aspiration is not only to make tasteful
+						and visually pleasing cakes but also to provide an enjoyable and
+						memorable experience for everyone who tastes my desserts. If you are
+						looking for a cake or treats for your special occasion, Boujie
+						Delights can help make your day remarkable. I look forward to
+						hearing from you soon!
 					</p>
-					<p>
-						So if your looking for a cake or treats for your special occasion,
-						Boujie Delights can help make your day a remarkable. I looking
-						forward to hearing from you soon!
-					</p>
-					<button className="bg-[#00df9a] w-[120px] rounded-lg font-serif my-6 mx-auto md:mx-0 py-3">
-						<a href="/contact">Contact</a>
-					</button>
+					<div className="pt-6">
+						<button className="w-40 py-2 px-4 uppercase">
+							<Link
+								to="contact"
+								smooth={true}
+								offset={-50}
+								duration={500}
+								className="group flex justify-center items-center cursor-pointer"
+							>
+								Contact
+							</Link>
+						</button>
+					</div>
 				</div>
 			</div>
 		</div>

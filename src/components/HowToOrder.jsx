@@ -56,6 +56,7 @@ const HowToOrder = () => {
 									Flavours
 								</h3>
 								<ul className="justify-center items-center text-gray-600">
+									<li className="py-2 mx-4 mt-2">1. Choose your flavours</li>
 									<li className="py-2 border-b mx-4 mt-2">
 										Vanilla Sponge & Buttercream
 									</li>
@@ -87,6 +88,9 @@ const HowToOrder = () => {
 								</h3>
 
 								<ul className="justify-center items-center text-center text-gray-600">
+									<li className="py-2 mx-4 mt-2 text-left">
+										2. Choose your filling
+									</li>
 									<li className="py-2 border-b mx-4 mt-2">Strawberry Jam</li>
 									<li className="py-2 border-b mx-4">Raspberry Jam</li>
 									<li className="py-2 border-b mx-4">
@@ -106,6 +110,9 @@ const HowToOrder = () => {
 								</h3>
 
 								<ul className="justify-center items-center text-gray-600">
+									<li className="py-2 mx-4 mt-2 text-left">
+										3. Choose your cake size
+									</li>
 									<li className="py-2 border-b mx-4 mt-2">
 										<span className=" text-gray-900">CUPCAKES</span>
 										<p>Box of 9 starting from £24</p>

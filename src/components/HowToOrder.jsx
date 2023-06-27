@@ -35,7 +35,7 @@ const HowToOrder = () => {
 					</p>
 
 					<div className="justify-start pt-6">
-						<button className="w-[200px]">
+						<button className="w-[200px] hover:bg-[#fee3c3] hover:text-black">
 							<Link
 								to="contact"
 								smooth={true}

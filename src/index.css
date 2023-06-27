@@ -14,13 +14,17 @@
 	h2,
 	h3,
 	h4,
+	h6,
 	p {
 		@apply font-[Fauna];
+	}
+
+	h6 {
+		@apply uppercase;
 	}
 	li {
 		@apply px-4;
 		@apply py-4;
-		@apply font-[Fauna];
 	}
 	button {
 		@apply font-[Fauna];

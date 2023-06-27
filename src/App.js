@@ -5,7 +5,6 @@ import About from './components/About';
 import HowToOrder from './components/HowToOrder';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
-import Gallery from './components/Gallery';
 import Cakes from './components/Cakes';
 
 function App() {
@@ -14,9 +13,8 @@ function App() {
 			<Navbar />
 			<Hero />
 			<Cakes />
-			<About />
 			<HowToOrder />
-			<Gallery />
+			<About />
 			<Contact />
 			<Footer />
 		</div>

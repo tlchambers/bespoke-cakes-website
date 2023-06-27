@@ -12,17 +12,17 @@ function Hero() {
 			<div className="grid md:grid-cols-2 mx-w-[1240px] m-auto">
 				<div className="absolute top-[26%] flex flex-col ">
 					<h3>Welcome To</h3>
-					<h2 className="md:text-4xl sm:text-4xl text-6xl md:py-6 py-4">
+					<h2 className="md:text-4xl sm:text-4xl text-6xl md:py-4 py-2">
 						Boujie Delights
 					</h2>
-					<p className=" max-w-[400px] flex">
+					<p className="max-w-[400px] text-lg flex">
 						When it comes to design, the sky is the limit! Whether you have a
 						specific theme or color scheme in mind, or simply want something
 						unique and eye-catching, we would love to create a cake that
 						perfectly captures your vision.
 					</p>
-					<button className="bg-black bg-opacity-30 text-white hover:bg-black hover:border-black w-[140px] p-2 mt-6 rounded-full">
-						<a href="/cakes">View</a>
+					<button className="bg-black bg-opacity-30 text-white uppercase hover:bg-black hover:border-black w-[140px] p-2 mt-6 rounded-full">
+						<a href="/cakes">EXPLORE</a>
 					</button>
 				</div>
 			</div>

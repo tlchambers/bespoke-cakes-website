@@ -6,14 +6,14 @@ function About() {
 	return (
 		<div name="about" className="w-full bg-gray-100">
 			<div className="max-w-[1240px] mx-auto px-4 py-[4rem] grid grid-cols-1 md:grid-cols-2 gap-8">
-				<div className="md:order-1">
+				<div className="md:order-1 flex items-center">
 					<img
 						src="https://images.pexels.com/photos/4110012/pexels-photo-4110012.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
 						alt="About Me"
 						className="w-full h-auto object-cover"
 					/>
 				</div>
-				<div className="md:order-2">
+				<div className="md:order-2 flex flex-col justify-center">
 					<h2 className="text-3xl pt-6 uppercase">About</h2>
 					<p className="text-lg py-4">
 						My name is Sabrina, and I am a home-based baker and cake decorator

@@ -49,17 +49,6 @@ const Navbar = () => {
 						</li>
 						<li>
 							<Link
-								to="gallery"
-								smooth={true}
-								offset={-100}
-								duration={500}
-								className="cursor-pointer"
-							>
-								Gallery
-							</Link>
-						</li>
-						<li>
-							<Link
 								to="about"
 								smooth={true}
 								offset={-50}
@@ -114,17 +103,6 @@ const Navbar = () => {
 						duration={500}
 					>
 						Price Guide
-					</Link>
-				</li>
-				<li className="border-b-2 border-zinc-300 w-full">
-					<Link
-						onClick={handleClose}
-						to="gallery"
-						smooth={true}
-						offset={-100}
-						duration={500}
-					>
-						Gallery
 					</Link>
 				</li>
 				<li className="border-b-2 border-zinc-300 w-full">

@@ -16,7 +16,7 @@ const Cakes = () => {
 		<div name="cakes" className="w-full py-[4rem]">
 			<div className="flex flex-col justify-center px-4 mx-[4rem]">
 				<h2 className="text-3xl pt-8 uppercase mt-8">Bespoke Cakes</h2>
-				<p className="max-w-[600px] flex pt-6 pb-8">
+				<p className="max-w-[600px] flex text-lg pt-6 pb-8">
 					Boujie Delights specialises in creating handmade bespoke cakes that
 					are both delicious and beautifully crafted. Every cake is made with
 					meticulous attention to detail, ensuring a truly delightful experience
@@ -25,7 +25,7 @@ const Cakes = () => {
 					your celebrations.
 				</p>
 
-				<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
+				<div className="grid grid-cols-1 sm:grid-cols-4 md:grid-cols-2 lg:grid-cols-2 gap-4">
 					{cakeImages.map((imageUrl, index) => (
 						<div key={index} className="aspect-w-1 aspect-h-1">
 							<img

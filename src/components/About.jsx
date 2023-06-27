@@ -32,13 +32,10 @@ function About() {
 						and trust the process. I am a hardworking and resilient creative who
 						takes pride in my work. My aspiration is not only to make tasteful
 						and visually pleasing cakes but also to provide an enjoyable and
-						memorable experience for everyone who tastes my desserts. If you are
-						looking for a cake or treats for your special occasion, Boujie
-						Delights can help make your day remarkable. I look forward to
-						hearing from you soon!
+						memorable experience for everyone who tastes my desserts.
 					</p>
 					<div className="pt-6">
-						<button className="w-40 py-2 px-4 uppercase">
+						<button className="w-40 py-2 px-4 uppercase bg-[#fee3c3] text-black hover:bg-white hover:border-2 hover:border-[#fee3c3]">
 							<Link
 								to="contact"
 								smooth={true}

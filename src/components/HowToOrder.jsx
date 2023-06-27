@@ -61,23 +61,23 @@ const HowToOrder = () => {
 								<ul className="justify-center items-center text-gray-600">
 									<li className="py-2 mx-4 mt-2">1. Choose your flavours</li>
 									<li className="py-2 border-b mx-4 mt-2">
-										Vanilla Sponge & Buttercream
+										<p>Vanilla Sponge & Buttercream</p>
 									</li>
 
 									<li className="py-2 border-b mx-4">
-										Oreo Sponge & Buttercream
+										<p>Oreo Sponge & Buttercream</p>
 									</li>
 
 									<li className="py-2 border-b mx-4">
-										Caramel Sponge & Biscoff Buttercream
+										<p>Caramel Sponge & Biscoff Buttercream</p>
 									</li>
 
 									<li className="py-2 border-b mx-4">
-										Red Velvet Sponge & Vanilla Buttercream
+										<p>Red Velvet Sponge & Vanilla Buttercream</p>
 									</li>
 
 									<li className="py-2 mx-4 pb-3">
-										Chocolate Sponge & Buttercream
+										<p>Chocolate Sponge & Buttercream</p>
 									</li>
 								</ul>
 							</div>
@@ -92,13 +92,21 @@ const HowToOrder = () => {
 
 								<ul className="justify-center items-center text-gray-600">
 									<li className="py-2 mx-4 mt-2">2. Choose your filling</li>
-									<li className="py-2 border-b mx-4 mt-2">Strawberry Jam</li>
-									<li className="py-2 border-b mx-4">Raspberry Jam</li>
-									<li className="py-2 border-b mx-4">
-										Hershey's Cookies & Creme
+									<li className="py-2 border-b mx-4 mt-2">
+										<p>Strawberry Jam</p>
 									</li>
-									<li className="py-2 border-b mx-4">Caramel</li>
-									<li className="py-2 mx-4 pb-3">Lotus Biscoff</li>
+									<li className="py-2 border-b mx-4">
+										<p>Raspberry Jam</p>
+									</li>
+									<li className="py-2 border-b mx-4">
+										<p>Hershey's Cookies & Creme</p>
+									</li>
+									<li className="py-2 border-b mx-4">
+										<p>Caramel</p>
+									</li>
+									<li className="py-2 mx-4 pb-3">
+										<p>Lotus Biscoff</p>
+									</li>
 								</ul>
 							</div>
 						</div>

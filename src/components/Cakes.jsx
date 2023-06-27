@@ -15,7 +15,7 @@ const Cakes = () => {
 	return (
 		<div name="cakes" className="w-full">
 			<div className="max-w-[1240px] mx-auto flex flex-col justify-center px-4 py-[4rem]">
-				<h2 className="text-3xl pt-8 uppercase mt-8">Bespoke Cakes</h2>
+				<h2 className="text-3xl uppercase">Bespoke Cakes</h2>
 				<p className="max-w-[600px] flex text-lg pt-6 pb-8">
 					Boujie Delights specialises in creating handmade bespoke cakes that
 					are both delicious and beautifully crafted. Every cake is made with

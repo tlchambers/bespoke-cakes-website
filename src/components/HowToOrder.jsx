@@ -10,22 +10,25 @@ import { Link } from 'react-scroll';
 
 const HowToOrder = () => {
 	return (
-		<div name="howToOrder" className="w-full h-screen">
-			<div className="w-full h-[700px] bg-gray-900/20 absolute">
+		<div
+			name="howToOrder"
+			className="w-full min-h-screen relative overflow-hidden"
+		>
+			<div className="bg-slate-900/40 absolute inset-0 z-0">
 				<img
 					className="w-full h-full object-cover mix-blend-overlay"
-					src={Img1}
+					src="https://images.pexels.com/photos/8108051/pexels-photo-8108051.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
 					alt="/"
 				/>
 			</div>
 
-			<div className="max-w-[1240px] mx-auto relative">
-				<div className="px-4 pt-8">
-					<h2 className="text-3xl pt-6 uppercase">How to Order</h2>
-					<h4 className="text-2xl pt-4">
+			<div className="max-w-[1240px] mx-auto pt-8 relative z-10">
+				<div className="px-4">
+					<h2 className="text-3xl pt-6 uppercase text-white">How to Order</h2>
+					<h4 className="text-2xl pt-4 text-white">
 						Create your bespoke flavour and combination
 					</h4>
-					<p className="max-w-[450px] ">
+					<p className="max-w-[450px] text-lg  text-white">
 						Boujie Delights uses the finest ingredients to create cakes that are
 						both beautiful and delicious. From classic flavors like vanilla and
 						chocolate, to more indulging options like lotus biscoff and caramel.
@@ -38,7 +41,7 @@ const HowToOrder = () => {
 								smooth={true}
 								offset={-50}
 								duration={500}
-								className="group flex justify-center items-center cursor-pointer"
+								className="group flex justify-center items-center uppercase cursor-pointer"
 							>
 								Enquire Today
 								<span className="group-hover:rotate-90 duration-300">
@@ -48,7 +51,7 @@ const HowToOrder = () => {
 						</button>
 					</div>
 
-					<div className="grid grid-cols-1 lg:grid-cols-3 relative gap-8 px-4 sm:pt-20 text-black">
+					<div className="grid grid-cols-1 lg:grid-cols-3 gap-8 py-8">
 						<div className="bg-white rounded-xl shadow-2xl">
 							<div className="p-8">
 								<h3 className="flex justify-center items-center text-2xl py-4">
@@ -73,7 +76,7 @@ const HowToOrder = () => {
 										Red Velvet Sponge & Vanilla Buttercream
 									</li>
 
-									<li className="py-2 border-b mx-4 pb-3">
+									<li className="py-2 mx-4 pb-3">
 										Chocolate Sponge & Buttercream
 									</li>
 								</ul>
@@ -87,17 +90,15 @@ const HowToOrder = () => {
 									Fillings
 								</h3>
 
-								<ul className="justify-center items-center text-center text-gray-600">
-									<li className="py-2 mx-4 mt-2 text-left">
-										2. Choose your filling
-									</li>
+								<ul className="justify-center items-center text-gray-600">
+									<li className="py-2 mx-4 mt-2">2. Choose your filling</li>
 									<li className="py-2 border-b mx-4 mt-2">Strawberry Jam</li>
 									<li className="py-2 border-b mx-4">Raspberry Jam</li>
 									<li className="py-2 border-b mx-4">
 										Hershey's Cookies & Creme
 									</li>
 									<li className="py-2 border-b mx-4">Caramel</li>
-									<li className="py-2 border-b mx-4 pb-3">Lotus Biscoff</li>
+									<li className="py-2 mx-4 pb-3">Lotus Biscoff</li>
 								</ul>
 							</div>
 						</div>
@@ -127,7 +128,7 @@ const HowToOrder = () => {
 										<p>8" starting from £180</p>
 									</li>
 
-									<li className="py-2 border-b mx-4 mt-2">
+									<li className="py-2 mx-4 mt-2">
 										<span className=" text-gray-900">MINI CAKES</span>
 										<p>2 Layer circle or heart cakes from £65</p>
 									</li>

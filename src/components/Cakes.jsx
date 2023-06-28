@@ -1,7 +1,4 @@
 import React from 'react';
-import Img1 from '../assets/ContactBkgroundImage.jpeg';
-import Img2 from '../assets/Logo.png';
-import Img3 from '../assets/aboutImage.jpeg';
 
 const Cakes = () => {
 	// Replace the image URLs with your own cake images

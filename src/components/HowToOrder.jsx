@@ -1,9 +1,5 @@
 import React from 'react';
-import Img1 from '../assets/ContactBkgroundImage.jpeg';
-import Img2 from '../assets/Logo.png';
-import Img3 from '../assets/aboutImage.jpeg';
 import { GiCakeSlice, GiCupcake } from 'react-icons/gi';
-// import { FaCakeCandles } from 'react-icons/fa';
 import { BiPound } from 'react-icons/bi';
 import { FaArrowRightLong } from 'react-icons/fa6';
 import { Link } from 'react-scroll';

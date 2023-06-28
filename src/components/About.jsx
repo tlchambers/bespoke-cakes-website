@@ -1,5 +1,4 @@
 import React from 'react';
-import Img from '../assets/aboutImage.jpeg';
 import { Link } from 'react-scroll';
 
 function About() {

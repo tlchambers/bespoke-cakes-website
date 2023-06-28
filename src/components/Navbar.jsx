@@ -43,7 +43,7 @@ const Navbar = () => {
 								duration={500}
 								className="cursor-pointer"
 							>
-								How to Order
+								How To Order
 							</Link>
 						</li>
 						<li>
@@ -96,12 +96,12 @@ const Navbar = () => {
 				<li className="border-b-2 border-zinc-300 w-full">
 					<Link
 						onClick={handleClose}
-						to="priceGuide"
+						to="howToOrder"
 						smooth={true}
 						offset={-50}
 						duration={500}
 					>
-						Price Guide
+						How To Order
 					</Link>
 				</li>
 				<li className="border-b-2 border-zinc-300 w-full">

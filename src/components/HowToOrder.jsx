@@ -50,12 +50,14 @@ const HowToOrder = () => {
 					<div className="grid grid-cols-1 lg:grid-cols-3 gap-8 py-8">
 						<div className="bg-white rounded-xl shadow-2xl">
 							<div className="p-8">
-								<h3 className="flex justify-center items-center text-2xl py-4">
+								<h3 className="flex justify-center items-center text-2xl pt-4">
 									<GiCakeSlice size={40} style={{ marginRight: '0.8rem' }} />
 									Flavours
 								</h3>
 								<ul className="justify-center items-center text-gray-600">
-									<li className="py-2 mx-4 mt-2">1. Choose your flavours</li>
+									<li className="pb-4 mx-4 mt-2 text-center">
+										1. Choose your flavours
+									</li>
 									<li className="py-2 border-b mx-4 mt-2">
 										<p>Vanilla Sponge & Buttercream</p>
 									</li>
@@ -81,13 +83,15 @@ const HowToOrder = () => {
 
 						<div className="bg-white rounded-xl shadow-2xl">
 							<div className="p-8">
-								<h3 className="flex justify-center items-center text-2xl py-4">
+								<h3 className="flex justify-center items-center text-2xl pt-4">
 									<GiCupcake size={40} style={{ marginRight: '0.8rem' }} />
 									Fillings
 								</h3>
 
 								<ul className="justify-center items-center text-gray-600">
-									<li className="py-2 mx-4 mt-2">2. Choose your filling</li>
+									<li className="pb-4 mx-4 mt-2 text-center">
+										2. Choose your filling
+									</li>
 									<li className="py-2 border-b mx-4 mt-2">
 										<p>Strawberry Jam</p>
 									</li>
@@ -109,13 +113,13 @@ const HowToOrder = () => {
 
 						<div className="bg-white rounded-xl shadow-2xl">
 							<div className="p-8">
-								<h3 className="flex justify-center items-center text-2xl py-4">
+								<h3 className="flex justify-center items-center text-2xl pt-4">
 									<BiPound size={40} style={{ marginRight: '0.8rem' }} />
 									Prices
 								</h3>
 
 								<ul className="justify-center items-center text-gray-600">
-									<li className="py-2 mx-4 mt-2 text-left">
+									<li className="pb-4 mx-4 mt-2 text-center">
 										3. Choose your cake size
 									</li>
 									<li className="py-2 border-b mx-4 mt-2">

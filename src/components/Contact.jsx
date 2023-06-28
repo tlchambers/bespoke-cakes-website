@@ -3,7 +3,7 @@ import ReCAPTCHA from 'react-google-recaptcha';
 import Img1 from '../assets/aboutImage.jpeg';
 
 function Contact() {
-	const [capVal, SetCapVal] = useState(null);
+	const [capVal, setCapVal] = useState('');
 
 	function Submit(e) {
 		e.preventDefault();
@@ -85,8 +85,8 @@ function Contact() {
 							name="Message"
 						></textarea>
 						<ReCAPTCHA
-							sitekey="6Le_2NgmAAAAAJOw400qQc-aEskjOOSFl4P37BZr"
-							onChange={(givenCapValue) => SetCapVal(givenCapValue)}
+							sitekey="6LfSm9kmAAAAAAHCscvgjKC3rMFL_CrFA8JFAetc"
+							onChange={(givenCapValue) => setCapVal(givenCapValue)}
 						/>
 						<button
 							disabled={!capVal}

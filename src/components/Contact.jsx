@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
-
-// import { GoogleReCaptcha } from 'react-google-recaptcha';
 import Img1 from '../assets/aboutImage.jpeg';
 
 function Contact() {

@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
+import ReCAPTCHA from 'react-google-recaptcha';
+
+// import { GoogleReCaptcha } from 'react-google-recaptcha';
 import Img1 from '../assets/aboutImage.jpeg';
 
 function Contact() {
+	const [capVal, SetCapVal] = useState(null);
+
 	function Submit(e) {
 		e.preventDefault();
 		const formElement = document.querySelector('#form');
@@ -81,7 +86,14 @@ function Contact() {
 							placeholder="Message"
 							name="Message"
 						></textarea>
-						<button className="uppercase col-span-2 m-2 bg-[#fee3c3] text-black hover:bg-white hover:border-2 hover:border-[#fee3c3]">
+						<ReCAPTCHA
+							sitekey="6Le_2NgmAAAAAJOw400qQc-aEskjOOSFl4P37BZr"
+							onChange={(givenCapValue) => SetCapVal(givenCapValue)}
+						/>
+						<button
+							disabled={!capVal}
+							className="uppercase col-span-2 m-2 bg-[#fee3c3] text-black hover:bg-white hover:border-2 hover:border-[#fee3c3]"
+						>
 							Submit
 						</button>
 					</div>

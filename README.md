@@ -45,7 +45,7 @@ This repo is for a small business, who makes bespoke cakes. The website is built
 ## Roadmap
 
 - [x] Discuss client's requirements
-- [x] Plann UI visually
+- [x] Mindmap requirement and UI design
 - [x] Develop components of website pages
 - [x] Deploy website
 - [x] Fix bugs

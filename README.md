@@ -1,8 +1,7 @@
+![Handmade Bespoke Cakes Website](./public/landingPage.png)
+
 ## About The Project
-
-[![Handmade Cakes - Small Business Screen Shot][website-screenshot]](./public/landingPage.png)
-
-This GitHub repository houses a handmade cake website built with React and styled with Tailwind CSS. The website offers a visually appealing and responsive user interface for browsing and contacting the business owner for inquiries.
+This repo is for a small business, who makes bespoke cakes. The website is built with React and styled with Tailwind CSS. The website offers a visually appealing and responsive user interface for browsing and contacting the business owner for inquiries.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -26,11 +25,11 @@ This GitHub repository houses a handmade cake website built with React and style
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/tlchambers/handmade-cake-website
+   git clone https://github.com/tlchambers/bespoke-cakes-website
    ```
 2. Navigate to the project directory:
    ```sh
-   cd handmade-cake-website
+   cd bespoke-cakes-website
    ```
 3. Install NPM packages
    ```sh

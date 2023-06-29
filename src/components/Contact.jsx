@@ -85,7 +85,8 @@ function Contact() {
 							name="Message"
 						></textarea>
 						<ReCAPTCHA
-							sitekey="6LfSm9kmAAAAAAHCscvgjKC3rMFL_CrFA8JFAetc"
+							className="m-2 p-2"
+							secretKey="6LfSm9kmAAAAAIRh03IqSLBMGEPaa6A_biXg-z8J"
 							onChange={(givenCapValue) => setCapVal(givenCapValue)}
 						/>
 						<button

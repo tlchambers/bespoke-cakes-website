@@ -13,8 +13,8 @@ function Hero() {
 				alt=""
 				className="w-full h-full object-cover absolute inset-0 z-0"
 			/>
-			<div className="grid md:grid-cols-2 sm:grid-cols-1 mx-auto md:ml-0 md:pt-[12rem] lg:ml-[45rem] relative z-10">
-				<div className="flex flex-col justify-center items-center md:items-start sm:p-4 py-2">
+			<div className="grid md:grid-cols-2 sm:grid-cols-1 mx-auto md:ml-0 md:pt-[12rem] lg:ml-[45rem] relative z-10 p-4 py-2">
+				<div className="flex flex-col justify-center items-center md:items-start">
 					<h3>Welcome To</h3>
 					<h2 className="flex md:text-3xl sm:text-2xl text-4xl md:py-4 py-2">
 						Boujie Delights

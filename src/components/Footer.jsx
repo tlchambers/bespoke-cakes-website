@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaInstagram, FaRegCommentDots } from 'react-icons/fa6';
 import { GrPhone, GrLocation } from 'react-icons/gr';
+import { Link } from 'react-scroll';
 
 function Footer() {
 	return (
@@ -19,10 +20,26 @@ function Footer() {
 				<div>
 					<h6 className="font-medium text-center">Useful Links</h6>
 					<ul>
-						<li className="py-2 text-sm">Bespoke Cakes</li>
-						<li className="py-2 text-sm">Price Guide</li>
-						<li className="py-2 text-sm">About</li>
-						<li className="py-2 text-sm">Contact</li>
+						<li className="py-2 text-sm">
+							<Link to="cakes" smooth={true} offset={-200} duration={500}>
+								Bespoke Cakes
+							</Link>
+						</li>
+						<li className="py-2 text-sm">
+							<Link to="howToOrder" smooth={true} offset={-50} duration={500}>
+								How To Order
+							</Link>
+						</li>
+						<li className="py-2 text-sm">
+							<Link to="about" smooth={true} offset={-50} duration={500}>
+								About
+							</Link>
+						</li>
+						<li className="py-2 text-sm">
+							<Link to="contact" smooth={true} offset={-50} duration={500}>
+								Contact
+							</Link>
+						</li>
 					</ul>
 				</div>
 				<div>
@@ -44,13 +61,13 @@ function Footer() {
 						<li className="py-2 text-sm">
 							<p className="flex items-center align-items-start">
 								<GrPhone size={20} style={{ marginRight: '0.8rem' }} />
-								07XXXXXXXX
+								07810237414
 							</p>
 						</li>
 						<li className="py-2 text-sm">
 							<p className="flex items-center align-items-start">
 								<FaRegCommentDots size={20} style={{ marginRight: '0.8rem' }} />
-								boujiedelights@gmail.com
+								boujiedelights@outlook.com
 							</p>
 						</li>
 						<li className="py-2 text-sm">

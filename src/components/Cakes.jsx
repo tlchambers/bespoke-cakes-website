@@ -7,12 +7,12 @@ const Cakes = () => {
 			<div className="max-w-[1240px] mx-auto flex flex-col justify-center px-4 py-[4rem]">
 				<h2 className="text-3xl uppercase">Bespoke Cakes</h2>
 				<p className="max-w-[600px] flex text-lg pt-6 pb-8 sm:justify-items-end">
-					Boujie Delights specialises in creating handmade bespoke cakes that
-					are both delicious and beautifully crafted. Every cake is made with
-					meticulous attention to detail, ensuring a truly delightful experience
-					for your special occasion. From birthdays to anniversaries and any
-					other memorable event, our cakes are designed to bring joy and elevate
-					your celebrations.
+					Beautifully Baked By Ess specialises in creating handmade bespoke
+					cakes that are both delicious and beautifully crafted. Every cake is
+					made with meticulous attention to detail, ensuring a truly delightful
+					experience for your special occasion. From birthdays to anniversaries
+					and any other memorable event, our cakes are designed to bring joy and
+					elevate your celebrations.
 				</p>
 
 				<div className="grid grid-cols-1 sm:grid-cols-4 md:grid-cols-2 lg:grid-cols-2 gap-4">

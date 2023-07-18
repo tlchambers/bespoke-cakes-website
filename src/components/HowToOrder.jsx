@@ -1,5 +1,6 @@
 import React from 'react';
 import { GiCakeSlice, GiCupcake } from 'react-icons/gi';
+import { SiCakephp } from 'react-icons/si';
 import { BiPound } from 'react-icons/bi';
 import { FaArrowRightLong } from 'react-icons/fa6';
 import { Link } from 'react-scroll';
@@ -52,30 +53,29 @@ const HowToOrder = () => {
 							<div className="p-8">
 								<h3 className="flex justify-center items-center text-2xl pt-4">
 									<GiCakeSlice size={40} style={{ marginRight: '0.8rem' }} />
-									Flavours
+									Cake Sponge
 								</h3>
 								<ul className="justify-center items-center text-gray-600">
 									<li className="pb-4 mx-4 mt-2 text-center">
-										1. Choose your flavours
+										1. Choose your Sponge
 									</li>
 									<li className="py-2 border-b mx-4 mt-2">
-										<p>Vanilla Sponge & Buttercream</p>
+										<p>Vanilla Sponge </p>
 									</li>
 
 									<li className="py-2 border-b mx-4">
-										<p>Oreo Sponge & Buttercream</p>
+										<p>Oreo Sponge</p>
 									</li>
 
 									<li className="py-2 border-b mx-4">
-										<p>Caramel Sponge & Biscoff Buttercream</p>
-									</li>
-
-									<li className="py-2 border-b mx-4">
-										<p>Red Velvet Sponge & Vanilla Buttercream</p>
+										<p>Caramel Sponge</p>
 									</li>
 
 									<li className="py-2 mx-4 pb-3">
-										<p>Chocolate Sponge & Buttercream</p>
+										<p>Chocolate Sponge</p>
+									</li>
+									<li className="py-2 border-b mx-4">
+										<p>Red Velvet Sponge</p>
 									</li>
 								</ul>
 							</div>
@@ -85,18 +85,41 @@ const HowToOrder = () => {
 							<div className="p-8">
 								<h3 className="flex justify-center items-center text-2xl pt-4">
 									<GiCupcake size={40} style={{ marginRight: '0.8rem' }} />
-									Fillings
+									Buttercream
+								</h3>
+								<ul className="justify-center items-center text-gray-600">
+									<li className="pb-4 mx-4 mt-2 text-center">
+										2. Choose your Buttercream
+									</li>
+									<li className="py-2 border-b mx-4 mt-2">
+										<p>Vanilla </p>
+									</li>
+									<li className="py-2 border-b mx-4">
+										<p>Oreo</p>
+									</li>
+									<li className="py-2 mx-4 pb-3">
+										<p>Lotus Biscoff</p>
+									</li>
+									<li className="py-2 border-b mx-4">
+										<p>Chocolate</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div className="bg-white rounded-xl shadow-2xl">
+							<div className="p-8">
+								<h3 className="flex justify-center items-center text-2xl pt-4">
+									<SiCakephp size={35} style={{ marginRight: '0.8rem' }} />
+									Filling
 								</h3>
 
 								<ul className="justify-center items-center text-gray-600">
 									<li className="pb-4 mx-4 mt-2 text-center">
-										2. Choose your filling
+										3. Choose your Filling
 									</li>
 									<li className="py-2 border-b mx-4 mt-2">
-										<p>Strawberry Jam</p>
-									</li>
-									<li className="py-2 border-b mx-4">
-										<p>Raspberry Jam</p>
+										<p>Rasberry or Strawberry Jam</p>
 									</li>
 									<li className="py-2 border-b mx-4">
 										<p>Hershey's Cookies & Creme</p>

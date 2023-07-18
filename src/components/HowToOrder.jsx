@@ -11,7 +11,7 @@ const HowToOrder = () => {
 			name="howToOrder"
 			className="w-full min-h-screen relative overflow-hidden"
 		>
-			<div className="bg-slate-900/40 absolute inset-0 z-0">
+			<div className="bg-black bg-opacity-50 absolute inset-0 z-0">
 				<img
 					className="w-full h-full object-cover mix-blend-overlay"
 					src="https://images.pexels.com/photos/8108051/pexels-photo-8108051.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -22,13 +22,14 @@ const HowToOrder = () => {
 			<div className="max-w-[1240px] mx-auto pt-8 relative z-10">
 				<div className="px-4">
 					<h2 className="text-3xl pt-6 uppercase text-white">How to Order</h2>
-					<h4 className="text-2xl pt-4 text-white">
+					<h4 className="text-2xl pt-6 text-white">
 						Create your bespoke flavour and combination
 					</h4>
 					<p className="max-w-[450px] text-lg  text-white">
-						Boujie Delights uses the finest ingredients to create cakes that are
-						both beautiful and delicious. From classic flavors like vanilla and
-						chocolate, to more indulging options like lotus biscoff and caramel.
+						Beautifully Baked By Ess uses the finest ingredients to create cakes
+						that are both beautiful and delicious. From classic flavors like
+						vanilla and chocolate, to more indulging options like lotus biscoff
+						and caramel.
 					</p>
 
 					<div className="justify-start pt-6">
@@ -48,7 +49,7 @@ const HowToOrder = () => {
 						</button>
 					</div>
 
-					<div className="grid grid-cols-1 lg:grid-cols-3 gap-8 py-8">
+					<div className="grid grid-cols-1 md:grid-cols-3 gap-4 py-4">
 						<div className="bg-white rounded-xl shadow-2xl">
 							<div className="p-8">
 								<h3 className="flex justify-center items-center text-2xl pt-4">
@@ -71,10 +72,10 @@ const HowToOrder = () => {
 										<p>Caramel Sponge</p>
 									</li>
 
-									<li className="py-2 mx-4 pb-3">
+									<li className="py-2 border-b mx-4 pb-3">
 										<p>Chocolate Sponge</p>
 									</li>
-									<li className="py-2 border-b mx-4">
+									<li className="py-2 mx-4">
 										<p>Red Velvet Sponge</p>
 									</li>
 								</ul>
@@ -97,10 +98,10 @@ const HowToOrder = () => {
 									<li className="py-2 border-b mx-4">
 										<p>Oreo</p>
 									</li>
-									<li className="py-2 mx-4 pb-3">
+									<li className="py-2 border-b mx-4 pb-3">
 										<p>Lotus Biscoff</p>
 									</li>
-									<li className="py-2 border-b mx-4">
+									<li className="py-2 mx-4">
 										<p>Chocolate</p>
 									</li>
 								</ul>

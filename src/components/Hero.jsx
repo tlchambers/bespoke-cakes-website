@@ -17,7 +17,7 @@ function Hero() {
 				<div className="flex flex-col justify-center items-center md:items-start">
 					<h3>Welcome To</h3>
 					<h2 className="flex md:text-3xl sm:text-2xl text-4xl md:py-4 py-2">
-						Boujie Delights
+						Beautifully Baked By Ess
 					</h2>
 					<p className="max-w-[400px] text-lg flex">
 						When it comes to design, the sky is the limit! Whether you have a

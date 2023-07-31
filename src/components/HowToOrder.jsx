@@ -29,25 +29,9 @@ const HowToOrder = () => {
 						vanilla and chocolate, to more indulging options like lotus biscoff
 						and caramel.
 					</p>
-					<h4 className="text-2xl pt-6 text-white">
+					<h4 className="text-2xl pt-8 text-white text-center">
 						Create your bespoke flavour and combination
 					</h4>
-					<div className="justify-start pt-6">
-						<button className="w-[200px] hover:bg-[#fee3c3] hover:text-black">
-							<Link
-								to="contact"
-								smooth={true}
-								offset={-50}
-								duration={500}
-								className="group flex justify-center items-center uppercase cursor-pointer"
-							>
-								Enquire Today
-								<span className="group-hover:rotate-90 duration-300">
-									<FaArrowRightLong className="ml-3" />
-								</span>
-							</Link>
-						</button>
-					</div>
 
 					<div className="grid grid-cols-1 md:grid-cols-3 gap-4 py-4">
 						<div className="bg-white rounded-xl shadow-2xl">
@@ -167,6 +151,23 @@ const HowToOrder = () => {
 								</ul>
 							</div>
 						</div>
+					</div>
+
+					<div className="justify-start py-6 text-right">
+						<button className="w-[200px] hover:bg-[#fee3c3] hover:text-black">
+							<Link
+								to="contact"
+								smooth={true}
+								offset={-50}
+								duration={500}
+								className="group flex justify-center items-center uppercase cursor-pointer"
+							>
+								Enquire Today
+								<span className="group-hover:rotate-90 duration-300">
+									<FaArrowRightLong className="ml-3" />
+								</span>
+							</Link>
+						</button>
 					</div>
 				</div>
 			</div>

@@ -22,16 +22,16 @@ const HowToOrder = () => {
 			<div className="max-w-[1240px] mx-auto pt-8 relative z-10">
 				<div className="px-4">
 					<h2 className="text-3xl pt-6 uppercase text-white">How to Order</h2>
-					<h4 className="text-2xl pt-6 text-white">
-						Create your bespoke flavour and combination
-					</h4>
+
 					<p className="max-w-[450px] text-lg  text-white">
 						Beautifully Baked By Ess uses the finest ingredients to create cakes
 						that are both beautiful and delicious. From classic flavors like
 						vanilla and chocolate, to more indulging options like lotus biscoff
 						and caramel.
 					</p>
-
+					<h4 className="text-2xl pt-6 text-white">
+						Create your bespoke flavour and combination
+					</h4>
 					<div className="justify-start pt-6">
 						<button className="w-[200px] hover:bg-[#fee3c3] hover:text-black">
 							<Link

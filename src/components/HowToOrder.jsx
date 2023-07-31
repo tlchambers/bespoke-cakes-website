@@ -148,14 +148,14 @@ const HowToOrder = () => {
 									</li>
 									<li className="py-2 border-b mx-4 mt-2">
 										<span className=" text-gray-900">CUPCAKES</span>
-										<p>Box of 9 starting from £24</p>
-										<p>Box of 12 starting from £30</p>
+										<p>Box of 9 starting from £25</p>
+										<p>Box of 12 starting from £35</p>
 										<p>Box of 24 starting from £60</p>
 									</li>
 
 									<li className="py-2 border-b mx-4 mt-2">
 										<span className=" text-gray-900">OCASSION CAKES</span>
-										<p>4" starting from £75</p>
+										<p>4" starting from £80</p>
 										<p>6" starting from £130</p>
 										<p>8" starting from £180</p>
 									</li>
